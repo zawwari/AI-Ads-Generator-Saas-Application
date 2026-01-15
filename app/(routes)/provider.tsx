@@ -20,7 +20,7 @@ function DashboardProvider({
         if (!user?.user && user.user) return router.replace('/')
 
 
-        user?.user && checkUser()
+        // user?.user && checkUser()
 
     }, [user])
 
@@ -40,7 +40,7 @@ function DashboardProvider({
             <main className='w-full'>
                 <AppHeader />
                 {/* <SidebarTrigger /> */}
-                <div className='p-10'>{children}</div>
+                <div className='py-5 p-10'>{children}</div>
             </main>
         </SidebarProvider>
 

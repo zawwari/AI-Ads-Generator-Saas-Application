@@ -13,23 +13,23 @@ export function LoginForm({
         <CardContent className="grid p-0 md:grid-cols-2 h-[500px]">
 
           {/* Left Side - Google Login */}
-          <div className="relative flex flex-col items-center justify-center p-8 text-center gap-6 bg-white">
+          <div className="relative flex flex-col items-center justify-center p-8 text-center  bg-[#271d3f]">
 
             {/* Decorative shapes */}
             <div className="absolute top-4 left-4 h-16 w-16 rounded-full bg-pink-200 opacity-70 blur-2xl"></div>
             <div className="absolute bottom-6 right-6 h-20 w-20 rounded-full bg-blue-200 opacity-60 blur-2xl"></div>
 
             <div className="relative z-10">
-              <h1 className="text-3xl font-extrabold text-blue-600">Welcome back 👋</h1>
-              <p className="text-muted-foreground mt-2">
-                Sign in to your <span className="font-semibold text-pink-600">Fast NextJs</span> By Tubeguruji
+              <h1 className="text-3xl font-extrabold text-white">Welcome back 👋</h1>
+              <p className="text-muted-foreground mb-10 mt-4`">
+                Sign in to your <span className="">Account</span>
               </p>
             </div>
 
             <Authentication>
               <Button
                 variant="outline"
-                className="relative z-10 w-full flex items-center gap-2 border-blue-400 hover:bg-blue-50"
+                className="relative z-10 w-full flex items-center gap-2 border-white text-white hover:bg-primary"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -41,7 +41,7 @@ export function LoginForm({
                     fill="currentColor"
                   />
                 </svg>
-                <span className="font-medium">Login with Google</span>
+                <span className="font-medium ">Login with Google</span>
               </Button>
             </Authentication>
           </div>
